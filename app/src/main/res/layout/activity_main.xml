@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="appbar_scrolling_view_behavior" />
+
+        <RelativeLayout
+            android:id="@+id/layout_data"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/gambardata"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/spiderman" />
+
+            <TextView
+                android:id="@+id/nama_pengunjung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gambardata"
+                android:text="Selamat Datang Mr. Spiderman" />
+
+            <TextView
+                android:id="@+id/nama_kucing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_pengunjung"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gambardata"
+                android:text="Nama Kucing : Catty" />
+
+            <TextView
+                android:id="@+id/jenis_kucing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_kucing"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gambardata"
+                android:text="Jenis Kucing : Persian" />
+
+            <TextView
+                android:id="@+id/berat_kucing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jenis_kucing"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gambardata"
+                android:text="Berat Kucing : 20kg" />
+
+            <TextView
+                android:id="@+id/umur_kucing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/berat_kucing"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gambardata"
+                android:text="Umur Kucing : 30 Tahun" />
+        </RelativeLayout>
+        <androidx.viewpager.widget.ViewPager
+            app:layout_constraintTop_toBottomOf="@id/layout_data"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:id="@+id/viewPager"
+            >
+        </androidx.viewpager.widget.ViewPager>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            >
+
+            <Button
+                android:id="@+id/RSterdekat"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:onClick="RSterdekat"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:text="Rumah Sakit Terdekat"></Button>
+
+            <Button
+                android:onClick="identifikasi_penyakit"
+                android:id="@+id/identifikasiPenyakit"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:text="Identifikasi Penyakit"></Button>
+
+            <Button
+                android:onClick="jenis_penyakit"
+                android:id="@+id/jenisPenyakit"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:text="Jenis Penyakit"></Button>
+
+            <Button
+                android:onClick="panduan_aplikasi"
+                android:id="@+id/panduanAplikasi"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:text="Panduan Aplikasi"></Button>
+
+            <Button
+                android:onClick="tentang_kami"
+                android:id="@+id/tentangKami"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:gravity="center"
+                android:text="Tentang Kami"></Button>
+
+            <Button
+                android:onClick="akun"
+                android:id="@+id/akun"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
+                android:text="Akun"></Button>
+        </GridLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

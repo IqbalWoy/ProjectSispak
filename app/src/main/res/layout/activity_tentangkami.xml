@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".penyakitKucing.tentangkami">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        >
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/button"
+            >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/spiderman"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:text="Tentang Kami"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeTentangkami"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/button"
+            app:layout_constraintTop_toBottomOf="@id/relative"
+            android:layout_marginTop="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/logoTentangkami"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/spiderman"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Detail Penyakit"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
