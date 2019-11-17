@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "688223144405",
+    "firebase_url": "https://loginauth-730ab.firebaseio.com",
+    "project_id": "loginauth-730ab",
+    "storage_bucket": "loginauth-730ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688223144405:android:2f562c0badebcb67d7955c",
+        "android_client_info": {
+          "package_name": "com.example.projectsispak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688223144405-mh14p2glf326um9a79n5idhbij93d71m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectsispak",
+            "certificate_hash": "3cbf45cdd9fe2b6ff10ec66dec9a450a4655ff8b"
+          }
+        },
+        {
+          "client_id": "688223144405-suqk8uk6ahac7a16bpm7u0tqcsfai2im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_jwNQEHLVnrc5cb7_iOpnwEtHXl7OTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688223144405-suqk8uk6ahac7a16bpm7u0tqcsfai2im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.projectsispak.IdentifikasiPenyakit.identifikasiPenyakit;
+import com.example.projectsispak.JenisPenyakit.mainPenyakitKucing;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnPanduanaplikasi;
     Button btnTentangkami;
     Button btnAkun;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

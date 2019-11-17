@@ -1,9 +1,11 @@
-package com.example.projectsispak;
+package com.example.projectsispak.IdentifikasiPenyakit;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.projectsispak.R;
 
 public class identifikasiPenyakit extends AppCompatActivity {
 

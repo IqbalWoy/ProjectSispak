@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.projectsispak.JenisPenyakit.PenyakitKucing;
+import com.example.projectsispak.JenisPenyakit.detailPenyakitKucing;
 
 import java.util.ArrayList;
 
@@ -47,7 +49,7 @@ public class CardViewPenyakit extends RecyclerView.Adapter<CardViewPenyakit.Card
                 Toast.makeText(holder.itemView.getContext(),
                         "Penyakit " + listPenyakit.get(holder.getAdapterPosition())
                                 .getNama(), Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(context.getApplicationContext(),detailPenyakitKucing.class);
+                Intent intent = new Intent(context.getApplicationContext(), detailPenyakitKucing.class);
                 intent.putExtra("image", penyakitKucing.getImage());
                 intent.putExtra("namaPenyakit", penyakitKucing.getNama());
                 intent.putExtra("desPenyakit", penyakitKucing.getDeskripsi());

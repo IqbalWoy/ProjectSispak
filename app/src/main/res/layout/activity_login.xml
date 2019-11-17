@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN PAGE"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_margin="16dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/editTextUsernameL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Username"
+
+            />
+
+        <EditText
+            android:layout_margin="16dp"
+            android:inputType="textPassword"
+            android:id="@+id/editTextPasswordL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            />
+
+        <Button
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogin"
+            android:text="Login USer"
+            android:background="@drawable/button"
+            />
+
+        <TextView
+            android:id="@+id/textViewSignUn"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have not Account? Sign Up Here"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

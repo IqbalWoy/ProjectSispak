@@ -193,8 +193,5 @@
                 android:drawableTop="@drawable/ic_airline_seat_recline_normal_black_24dp"
                 android:text="Akun"></Button>
         </GridLayout>
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

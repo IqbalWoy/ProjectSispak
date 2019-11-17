@@ -1,10 +1,13 @@
-package com.example.projectsispak;
+package com.example.projectsispak.JenisPenyakit;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.projectsispak.CardViewPenyakit;
+import com.example.projectsispak.R;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.example.projectsispak;
+package com.example.projectsispak.JenisPenyakit;
 
 public class PenyakitKucing {
     private String nama;

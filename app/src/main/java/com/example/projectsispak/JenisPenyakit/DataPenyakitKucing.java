@@ -1,4 +1,6 @@
-package com.example.projectsispak;
+package com.example.projectsispak.JenisPenyakit;
+
+import com.example.projectsispak.R;
 
 import java.util.ArrayList;
 

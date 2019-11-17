@@ -1,10 +1,12 @@
-package com.example.projectsispak;
+package com.example.projectsispak.JenisPenyakit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.example.projectsispak.R;
 
 public class detailPenyakitKucing extends AppCompatActivity {
     private static final String TAG = "Detail Penyakit Kucing";
