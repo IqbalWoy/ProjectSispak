@@ -96,7 +96,7 @@ public class MainActivityRegister extends AppCompatActivity implements View.OnCl
         progressDialog.show();
 //
 
-        firebaseAuth.createUserWithEmailAndPassword(username, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        firebaseAuth.createUserWithEmailAndPassword(username, password).addOnCompleteListener(this,     new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
