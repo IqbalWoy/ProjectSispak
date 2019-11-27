@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Akun"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_akun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_akun2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/button">
+
+            <ImageView
+                android:id="@+id/iv_akun"
+                android:layout_width="112dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/akun"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_akun"
+                android:layout_centerHorizontal="true"
+                android:text="Akun"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_identitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identitas Pemilik"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@id/rl_akun2"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btn_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_identitas"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="Nama Lengkap\nMr. Spiderman"
+            android:textAllCaps="false"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email\nspiderman@gmail.com"
+            android:textSize="18dp"
+            android:background="@drawable/button"
+            android:layout_below="@id/btn_nama"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password\n********"
+            android:textSize="18dp"
+            android:background="@drawable/button"
+            android:layout_below="@id/btn_email"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota\nMalang"
+            android:textSize="18dp"
+            android:background="@drawable/button"
+            android:layout_below="@id/btn_password"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:textAllCaps="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_identitaskucing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identitas Kucing"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@id/btn_kota"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama kucing : Catty\nJenis kucing : Persian\nUmur : 30 tahun\nBerat : 20 kg"
+            android:layout_below="@id/tv_identitaskucing"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+        <Button
+            android:id="@+id/btn_signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:text="SIGN OUT" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

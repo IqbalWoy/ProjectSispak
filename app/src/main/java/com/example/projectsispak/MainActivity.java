@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -51,10 +52,15 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         viewPager.setAdapter(adapter);
         viewPager.setPadding(300,0,130,0);
+
+
+
     }
 
     public void RSterdekat(View view) {
-        Intent intent = new Intent(this, mainPenyakitKucing.class);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo: -7.9539107,112.6236643"));
         startActivity(intent);
     }
 
@@ -66,15 +72,18 @@ public class MainActivity extends AppCompatActivity {
     public void jenis_penyakit(View view) {
         Intent intent = new Intent(this, mainPenyakitKucing.class);
         startActivity(intent);
-
     }
 
     public void panduan_aplikasi(View view) {
     }
 
     public void tentang_kami(View view) {
+        Intent intent = new Intent(this, TentangKami.class);
+        startActivity(intent);
     }
 
     public void akun(View view) {
+        Intent intent = new Intent(this, Akun.class);
+        startActivity(intent);
     }
 }

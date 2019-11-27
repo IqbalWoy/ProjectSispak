@@ -48,10 +48,10 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Login.this, "DIPENCET", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(Login.this, MainActivityRegister.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -65,7 +65,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         //Validasi
         if(TextUtils.isEmpty(email)){
             //Username is Empty
-            Toast.makeText(this, "Please Enter Username", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Email", Toast.LENGTH_SHORT).show();
             etEmail.requestFocus();
             return;
         }
@@ -90,6 +90,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
+                    finish();
                 }else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -102,10 +103,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.buttonLogin:
                 UserLogin();
+                finish();
                 break;
             case R.id.textViewSignUn:
-                Toast.makeText(Login.this, "DIPENCET", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(Login.this, MainActivityRegister.class));
+                finish();
                 break;
         }
     }
