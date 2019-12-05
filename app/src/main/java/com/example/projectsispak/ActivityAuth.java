@@ -6,13 +6,15 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import com.example.projectsispak.Auth.AuthFragment;
+
 public class ActivityAuth extends AppCompatActivity {
 
     private AuthFragment authFragment = new AuthFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auth);
+        setContentView(R.layout.AuthFragment);
         setFragment(authFragment);
     }
 

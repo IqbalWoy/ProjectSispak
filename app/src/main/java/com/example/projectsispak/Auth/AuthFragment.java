@@ -1,4 +1,4 @@
-package com.example.projectsispak;
+package com.example.projectsispak.Auth;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.projectsispak.R;
 
 
 public class AuthFragment extends Fragment {
@@ -25,5 +26,6 @@ public class AuthFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_auth, container, false);
     }
+
 
 }
