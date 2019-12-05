@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".IdentifikasiPenyakit.identifikasiPenyakit" />
         <activity android:name=".JenisPenyakit.mainPenyakitKucing" />
+        <activity android:name=".TentangKami" />
+        <activity android:name=".Akun" />
     </application>
 
 </manifest>

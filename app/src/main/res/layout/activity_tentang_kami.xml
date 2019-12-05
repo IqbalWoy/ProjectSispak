@@ -161,7 +161,7 @@
                 android:id="@+id/img_iqbal"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/dhifan"
+                android:src="@drawable/boy"
                 android:layout_below="@id/tv_teamkami"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"/>
@@ -170,7 +170,7 @@
                 android:id="@+id/img_safira"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/dhifan"
+                android:src="@drawable/boy"
                 android:layout_below="@id/img_iqbal"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"/>
@@ -179,7 +179,7 @@
                 android:id="@+id/img_dhifan"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/dhifan"
+                android:src="@drawable/boy"
                 android:layout_below="@id/img_safira"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"/>
@@ -188,7 +188,7 @@
                 android:id="@+id/img_sulthon"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/dhifan"
+                android:src="@drawable/boy"
                 android:layout_below="@id/img_dhifan"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"/>

@@ -14,7 +14,7 @@ public class ActivityAuth extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.AuthFragment);
+        setContentView(R.layout.authfragment);
         setFragment(authFragment);
     }
 
