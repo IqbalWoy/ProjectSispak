@@ -14,15 +14,15 @@
         <activity android:name=".ActivityAuth"></activity>
         <activity android:name=".LoginRegister.Login" />
         <activity android:name=".LoginRegister.MainActivityRegister">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".penyakitKucing.tentangkami" />
         <activity android:name=".JenisPenyakit.detailPenyakitKucing" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".IdentifikasiPenyakit.identifikasiPenyakit" />
         <activity android:name=".JenisPenyakit.mainPenyakitKucing" />
     </application>
