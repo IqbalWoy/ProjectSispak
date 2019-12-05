@@ -11,16 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Auth.AuthActivity"></activity>
-        <activity android:name=".ActivityAuth" />
+        <activity android:name=".ActivityAuth"></activity>
         <activity android:name=".LoginRegister.Login" />
-        <activity android:name=".LoginRegister.MainActivityRegister"></activity>
+        <activity android:name=".LoginRegister.MainActivityRegister">
+        </activity>
         <activity android:name=".penyakitKucing.tentangkami" />
         <activity android:name=".JenisPenyakit.detailPenyakitKucing" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
